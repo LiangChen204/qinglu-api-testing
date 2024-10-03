@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="qinglu接口测试" verbose="2" parallel="false" configfailurepolicy="continue">
+
+    <test name="qinglu api测试">
+<!--        <packages>-->
+<!--            <package name="com.saas.qa.api.qingluapi.testcase.*"/>-->
+<!--        </packages>-->
+        <classes>
+            <class name="com.saas.qa.api.qingluapi.testcase.ReportDemo">
+            </class>
+        </classes>
+
+    </test>
+
+    <listeners>
+        <listener class-name="com.saas.qa.listener.ExtentTestNGReporterListener"></listener>
+    </listeners>
+</suite>
+

@@ -3,18 +3,21 @@
 <suite name="qinglu接口测试" verbose="2" parallel="false" configfailurepolicy="continue">
 
     <test name="qinglu api测试">
-<!--        <packages>-->
-<!--            <package name="com.saas.qa.api.qingluapi.testcase.*"/>-->
-<!--        </packages>-->
-        <classes>
-            <class name="com.saas.qa.api.qingluapi.testcase.ReportDemo">
-            </class>
-        </classes>
+        <packages>
+            <package name="com.saas.qa.api.testcase.*"/>
+        </packages>
+
+
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="testcase.com.saas.qa.api.SampleTest"/>&ndash;&gt;-->
+<!--            <class name="com.saas.qa.api.testcase.car.VehicleModelOpertationTest"/>-->
+<!--            <class name="com.saas.qa.api.testcase.store.StoreStatusUpdateTest"/>-->
+<!--        </classes>-->
 
     </test>
 
-    <listeners>
-        <listener class-name="com.saas.qa.listener.ExtentTestNGReporterListener"></listener>
-    </listeners>
+<!--    <listeners>-->
+<!--        <listener class-name="io.qameta.allure.testng.AllureTestNg" />-->
+<!--    </listeners>-->
 </suite>
 

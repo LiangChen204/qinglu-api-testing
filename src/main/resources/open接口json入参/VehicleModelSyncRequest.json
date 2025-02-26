@@ -1,0 +1,14 @@
+{
+  "ctripSubSeryId": 66607,
+  "licenseTypes": [
+    {
+      "vehicleModelId": "model-001",
+      "saasModelId": null,
+      "licenseType": 1
+    }
+  ],
+  "hasSnowTires": 1,
+  "selfServiceReturn": 1,
+  "fastChargeTime": 1
+}
+

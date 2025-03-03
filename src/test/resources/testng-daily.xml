@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Daily Test Suite" parallel="none">
+    <!-- 注释掉其他测试类 -->
+    <!--
+    <test name="Circle Info Tests">
+        <classes>
+            <class name="com.saas.qa.api.testcase.open.store.CircleInfoTest"/>
+        </classes>
+    </test>
+    <test name="Store Circle Tests">
+        <classes>
+            <class name="com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest"/>
+            <class name="com.saas.qa.api.testcase.open.store.StoreCircleDeleteTest"/>
+        </classes>
+    </test>
+    <test name="Store Status Tests">
+        <classes>
+            <class name="com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest"/>
+        </classes>
+    </test>
+    -->
+    
+    <!-- 只运行 StoreInfoTest -->
+    <!-- <test name="Store Info Tests" preserve-order="true">
+        <classes>
+            <class name="com.saas.qa.api.testcase.open.store.StoreInfoTest"/>
+        </classes>
+    </test> -->
+    
+    <!-- 只运行 StoreStatusUpdateTest -->
+    <test name="Store Status Update Tests" preserve-order="true">
+        <classes>
+            <class name="com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest"/>
+        </classes>
+    </test>
+    
+    <!-- 只运行 StoreCircleSyncTest -->
+    <test name="Store Circle Sync Tests" preserve-order="true">
+        <classes>
+            <class name="com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest"/>
+        </classes>
+    </test>
+    
+    <!-- 新增 StoreBaseSyncTest -->
+    <test name="Store Base Sync Tests" preserve-order="true">
+        <classes>
+            <class name="com.saas.qa.api.testcase.open.store.StoreBaseSyncTest"/>
+        </classes>
+    </test>
+</suite>

@@ -4,20 +4,11 @@
 
     <test name="qinglu api测试">
         <packages>
-            <package name="com.saas.qa.api.testcase.*"/>
+            <package name="com.saas.qa.api.testcase.open.store.*"/>
         </packages>
 
-
-<!--        <classes>-->
-<!--&lt;!&ndash;            <class name="testcase.com.saas.qa.api.SampleTest"/>&ndash;&gt;-->
-<!--            <class name="com.saas.qa.api.testcase.car.VehicleModelOpertationTest"/>-->
-<!--            <class name="com.saas.qa.api.testcase.store.StoreStatusUpdateTest"/>-->
-<!--        </classes>-->
+        <!-- 如果需要指定特定的类，可以使用 <classes> 标签 -->
 
     </test>
 
-<!--    <listeners>-->
-<!--        <listener class-name="io.qameta.allure.testng.AllureTestNg" />-->
-<!--    </listeners>-->
 </suite>
-

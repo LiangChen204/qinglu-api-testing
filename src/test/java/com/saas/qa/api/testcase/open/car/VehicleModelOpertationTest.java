@@ -39,28 +39,4 @@ public class VehicleModelOpertationTest extends HttpBase {
             throw new RuntimeException(e);
         }
     }
-
-//    @Test
-//    @Description("异常场景测试：传递超过50个牌照类型，验证接口返回400状态码")
-//    @Story("异常场景")
-//    public void testPostVehicleModel_ExceedLicenseTypesLimit() {
-//        Map<String, String> formBody = new HashMap<>();
-//        // 发送POST请求
-//        Response response = operation.postVehicleModelForm(formBody);
-//
-//        // 验证响应状态码
-//        Assert.assertEquals(response.code(), 400, "结果符合预期");
-//    }
-
-//    @Test
-//    @Description("异常场景测试：缺少必填字段，验证接口返回400状态码")
-//    @Story("异常场景")
-//    public void testPostVehicleModel_MissingRequiredFields() {
-//        Map<String, String> formBody = new HashMap<>();
-//        // 发送POST请求
-//        Response response = operation.postVehicleModelForm(formBody);
-//
-//        // 验证响应状态码
-//        Assert.assertEquals(response.code(), 400, "结果符合预期");
-//    }
 }

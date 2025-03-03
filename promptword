@@ -1,0 +1,33 @@
+一、open接口
+模版关键字：
+步骤一、在model目录下，生成一个如下接口数据基类，命名需要参考现有有类规范：
+OpenCircleInfoRequest
+字段名 类型 必传 说明
+storeId String 是 门店id
+saasStoreId Long 是 Saas 内部ID --20241102 add for hello对接专用，直连商家忽略
+channelId Long 是 渠道ID （1.线下 2.携程【携程分销】 3.飞猪 4.哈啰 5.租租车 6.悟空 7.滴滴 8.同程 9.神州）
+步骤二、在factory目录下，新建个工厂类。组装对应基类的数据，以提供给接口作为json入参做准备，数据需要满足以下几点：
+1、需要创建多种类型，以使用正常场景和异常场景数据；
+2、满足覆盖以下场景：正常场景、不满足字段要求场景，必填字段缺失场景；
+3、正常值分别为test57_hello，7315，2
+步骤三、新增一个测试类:
+1、类名: CircleInfoTest(取open接口对应接口方法名)
+2、包名: com.saas.qa.api.testcase.open.store(取open接口对应接口模块名)
+3、框架: TestNG+maven
+4、使用 @Test注解标记测试方法,使用assertEquals验证预期结果
+5、代码结构: 继承HttpBase以初始化 HttpHelper、PrintResponseHelper方法
+6、为每个类编写多个测试方法:
+一个测试正常情况。
+一个测试字段异常情况。
+一个测试必填项缺失情况。
+7、接口具体请求信息如下:
+接口为post请求,入参为表单格式
+url:http://open2.qinglusaas-dev.com
+url配置在常量类MethodConstants中,如果有则直接引用,没有则新增一个常量
+路径:/open/test(测试环境固定为这个路径)
+表单包括两个字段:
+第一个为:String bizRequest = “”，不同场景方法中，赋值需要调用对应工厂类的各种场景数据的方法返回值
+第二个为:String method = “qinglu.open.circle.info”,
+method这个值配置在常量类MethodConstants中,如果有则直接引用,没有则新增一个常量定义，名称命名取方法名open后名称开始
+8、把该类配置到testng-daily.xml文件中，注释其他运行类，并执行文件
+接下来开始生成

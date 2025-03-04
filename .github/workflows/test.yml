@@ -1,51 +1,61 @@
+# 工作流名称，会显示在 GitHub Actions 页面上
 name: API Test Automation
 
+# 定义触发工作流的事件
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main, master ]  # 当代码推送到 main 或 master 分支时触发
   pull_request:
-    branches: [ main, master ]
+    branches: [ main, master ]  # 当创建针对 main 或 master 分支的PR时触发
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 2 * * *'        # 定时触发：每天 UTC 2:00 (即北京时间 10:00) 运行
 
+# 定义工作流中的作业
 jobs:
-  test:
-    runs-on: ubuntu-latest
+  test:                        # 作业名称为 "test"
+    runs-on: ubuntu-latest     # 在最新版本的 Ubuntu 运行环境中执行
     
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    steps:                     # 定义作业的步骤
+    # 步骤1：检出代码
+    - name: Checkout code      # 步骤名称
+      uses: actions/checkout@v2 # 使用官方的 checkout action，版本 v2
     
+    # 步骤2：设置 Java 环境
     - name: Set up JDK 8
       uses: actions/setup-java@v2
       with:
-        java-version: '8'
-        distribution: 'adopt'
+        java-version: '8'      # 指定 Java 版本
+        distribution: 'adopt'   # 使用 AdoptOpenJDK 发行版
         
+    # 步骤3：缓存 Maven 依赖，提高构建速度
     - name: Cache Maven packages
       uses: actions/cache@v2
       with:
-        path: ~/.m2
-        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-        restore-keys: ${{ runner.os }}-m2
+        path: ~/.m2           # 缓存 Maven 本地仓库
+        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}  # 缓存键
+        restore-keys: ${{ runner.os }}-m2  # 恢复缓存的键
         
+    # 步骤4：运行测试
     - name: Run Tests
-      run: mvn clean test
+      run: mvn clean test     # 执行 Maven 测试命令
       
+    # 步骤5：生成 Allure 报告
     - name: Generate Allure Report
-      if: always()
-      run: mvn allure:report
+      if: always()            # 无论前面步骤是否失败都执行
+      run: mvn allure:report  # 生成 Allure 报告
         
+    # 步骤6：部署报告到 GitHub Pages
     - name: Deploy to GitHub Pages
-      if: always()
+      if: always()            # 无论前面步骤是否失败都执行
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: target/site/allure-maven-plugin
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # 使用 GitHub 自动生成的 token
+        publish_dir: target/site/allure-maven-plugin  # 要发布的目录
         
+    # 步骤7：上传测试结果作为构建产物
     - name: Upload Test Results
-      if: always()
+      if: always()            # 无论前面步骤是否失败都执行
       uses: actions/upload-artifact@v2
       with:
-        name: test-results
-        path: target/site/allure-maven-plugin/ 
+        name: test-results    # 产物名称
+        path: target/site/allure-maven-plugin/  # 要上传的文件路径 

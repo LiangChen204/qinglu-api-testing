@@ -5,6 +5,10 @@ import java.util.List;
 /**
  * 营业时间请求对象
  * @since 2025-03-03
+ * 数据库信息：jdbc:mysql://rm-uf69u326h3nb389j03o.rwlb.rds.aliyuncs.com:3306/
+ * 账号：qinglu
+ * 密码：m3rTQ6XNA043uFSf
+ * 库名：common
  */
 public class BusinessTimeRequest {
     private String businessPeriod;

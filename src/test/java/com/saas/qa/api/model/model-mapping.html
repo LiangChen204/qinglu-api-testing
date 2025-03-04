@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .class-header {
+            background-color: #2196F3;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Model 类与数据库表字段映射关系</h1>
+
+    <!-- BusinessTimeRequest -->
+    <div class="class-header">
+        <h2>BusinessTimeRequest（营业时间请求对象）</h2>
+    </div>
+    <table>
+        <tr>
+            <th>Java 字段</th>
+            <th>字段类型</th>
+            <th>数据库表</th>
+            <th>数据库字段</th>
+            <th>字段说明</th>
+        </tr>
+        <tr>
+            <td>businessPeriod</td>
+            <td>String</td>
+            <td>t_store_business_time</td>
+            <td>business_period</td>
+            <td>营业时间段（1111111表示周一到周日）</td>
+        </tr>
+        <tr>
+            <td>businessFrom</td>
+            <td>Integer</td>
+            <td>t_store_business_time</td>
+            <td>business_from</td>
+            <td>营业开始时间（800表示8:00）</td>
+        </tr>
+        <tr>
+            <td>businessTo</td>
+            <td>Integer</td>
+            <td>t_store_business_time</td>
+            <td>business_to</td>
+            <td>营业结束时间（2200表示22:00）</td>
+        </tr>
+        <tr>
+            <td>nightService</td>
+            <td>Byte</td>
+            <td>t_store_business_time</td>
+            <td>night_service</td>
+            <td>是否提供夜间服务（0-否 1-是）</td>
+        </tr>
+        <tr>
+            <td>nightList</td>
+            <td>List&lt;StoreNightRequest&gt;</td>
+            <td>t_store_night_service</td>
+            <td>-</td>
+            <td>夜间服务设置列表</td>
+        </tr>
+    </table>
+
+    <!-- BusinessTimeV2Request -->
+    <div class="class-header">
+        <h2>BusinessTimeV2Request（营业时间V2请求对象）</h2>
+    </div>
+    <table>
+        <tr>
+            <th>Java 字段</th>
+            <th>字段类型</th>
+            <th>数据库表</th>
+            <th>数据库字段</th>
+            <th>字段说明</th>
+        </tr>
+        <tr>
+            <td>businessPeriod</td>
+            <td>String</td>
+            <td>t_store_business_time_v2</td>
+            <td>business_period</td>
+            <td>营业时间段</td>
+        </tr>
+        <tr>
+            <td>periodTimeList</td>
+            <td>List&lt;PeriodTimeRequest&gt;</td>
+            <td>t_store_period_time</td>
+            <td>-</td>
+            <td>时间段列表</td>
+        </tr>
+        <tr>
+            <td>nightService</td>
+            <td>Byte</td>
+            <td>t_store_business_time_v2</td>
+            <td>night_service</td>
+            <td>夜间服务（0-否 1-是）</td>
+        </tr>
+        <tr>
+            <td>nightList</td>
+            <td>List&lt;StoreNightRequest&gt;</td>
+            <td>t_store_night_service</td>
+            <td>-</td>
+            <td>夜间服务列表</td>
+        </tr>
+    </table>
+
+    <!-- RestTimeV2Request -->
+    <div class="class-header">
+        <h2>RestTimeV2Request（休息时间V2请求对象）</h2>
+    </div>
+    <table>
+        <tr>
+            <th>Java 字段</th>
+            <th>字段类型</th>
+            <th>数据库表</th>
+            <th>数据库字段</th>
+            <th>字段说明</th>
+        </tr>
+        <tr>
+            <td>startDate</td>
+            <td>Date</td>
+            <td>t_store_rest_time_v2</td>
+            <td>start_date</td>
+            <td>开始日期</td>
+        </tr>
+        <tr>
+            <td>endDate</td>
+            <td>Date</td>
+            <td>t_store_rest_time_v2</td>
+            <td>end_date</td>
+            <td>结束日期</td>
+        </tr>
+        <tr>
+            <td>periodTimeVoList</td>
+            <td>List&lt;PeriodTimeRequest&gt;</td>
+            <td>t_store_period_time</td>
+            <td>-</td>
+            <td>时间段列表</td>
+        </tr>
+    </table>
+
+    <!-- StoreNightRequest -->
+    <div class="class-header">
+        <h2>StoreNightRequest（夜间服务设置请求对象）</h2>
+    </div>
+    <table>
+        <tr>
+            <th>Java 字段</th>
+            <th>字段类型</th>
+            <th>数据库表</th>
+            <th>数据库字段</th>
+            <th>字段说明</th>
+        </tr>
+        <tr>
+            <td>businessFrom</td>
+            <td>Integer</td>
+            <td>t_store_night_service</td>
+            <td>business_from</td>
+            <td>夜间服务开始时间</td>
+        </tr>
+        <tr>
+            <td>businessTo</td>
+            <td>Integer</td>
+            <td>t_store_night_service</td>
+            <td>business_to</td>
+            <td>夜间服务结束时间</td>
+        </tr>
+        <tr>
+            <td>fee</td>
+            <td>Integer</td>
+            <td>t_store_night_service</td>
+            <td>fee</td>
+            <td>夜间服务费用</td>
+        </tr>
+        <tr>
+            <td>feeType</td>
+            <td>Byte</td>
+            <td>t_store_night_service</td>
+            <td>fee_type</td>
+            <td>费用类型（1-固定金额 2-百分比）</td>
+        </tr>
+    </table>
+</body>
+</html> 

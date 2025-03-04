@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Daily Test Suite]">
+  <test thread-count="5" name="Store Circle Sync Tests(failed)">
+    <classes>
+      <class name="com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest">
+        <methods>
+          <include name="testCircleSync_InvalidField"/>
+          <include name="testCircleSync_MissingRequired"/>
+        </methods>
+      </class> <!-- com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest -->
+    </classes>
+  </test> <!-- Store Circle Sync Tests(failed) -->
+  <test thread-count="5" name="Store Base Sync Tests(failed)">
+    <classes>
+      <class name="com.saas.qa.api.testcase.open.store.StoreBaseSyncTest">
+        <methods>
+          <include name="testStoreBaseSync_InvalidField"/>
+          <include name="testStoreBaseSync_MissingRequired"/>
+        </methods>
+      </class> <!-- com.saas.qa.api.testcase.open.store.StoreBaseSyncTest -->
+    </classes>
+  </test> <!-- Store Base Sync Tests(failed) -->
+</suite> <!-- Failed suite [Daily Test Suite] -->

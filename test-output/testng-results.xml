@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="0" total="9" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Daily Test Suite" duration-ms="62238" started-at="2025-03-04T13:40:35 CST" finished-at="2025-03-04T13:41:37 CST">
+    <groups>
+    </groups>
+    <test name="Store Status Update Tests" duration-ms="21296" started-at="2025-03-04T13:40:35 CST" finished-at="2025-03-04T13:40:56 CST">
+      <class name="com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest">
+        <test-method status="PASS" signature="testStoreStatusUpdate_InvalidField()[pri:0, instance:com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest@5af3afd9]" name="testStoreStatusUpdate_InvalidField" duration-ms="10994" started-at="2025-03-04T13:40:35 CST" description="异常场景测试：无效字段值" finished-at="2025-03-04T13:40:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStoreStatusUpdate_InvalidField -->
+        <test-method status="PASS" signature="testStoreStatusUpdate_MissingRequired()[pri:0, instance:com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest@5af3afd9]" name="testStoreStatusUpdate_MissingRequired" duration-ms="5136" started-at="2025-03-04T13:40:46 CST" description="异常场景测试：缺少必填字段" finished-at="2025-03-04T13:40:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStoreStatusUpdate_MissingRequired -->
+        <test-method status="PASS" signature="testStoreStatusUpdate_Success()[pri:0, instance:com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest@5af3afd9]" name="testStoreStatusUpdate_Success" duration-ms="5116" started-at="2025-03-04T13:40:51 CST" description="正常场景测试：传递合法参数" finished-at="2025-03-04T13:40:56 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStoreStatusUpdate_Success -->
+      </class> <!-- com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest -->
+    </test> <!-- Store Status Update Tests -->
+    <test name="Store Circle Sync Tests" duration-ms="15342" started-at="2025-03-04T13:41:01 CST" finished-at="2025-03-04T13:41:16 CST">
+      <class name="com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest">
+        <test-method status="FAIL" signature="testCircleSync_InvalidField()[pri:0, instance:com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest@4ec4f3a0]" name="testCircleSync_InvalidField" duration-ms="5097" started-at="2025-03-04T13:41:01 CST" description="异常场景测试：无效字段值" finished-at="2025-03-04T13:41:06 CST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[结果不符合预期 expected [未找到该门店渠道表数据] but found [delFlg不为null,circleDTO={"channelId":999,"circleId":"test_circle_001","deliveryServiceType":9,"enabled":1,"fee":5000,"feeType":1,"name":"测试服务圈","saasCircleId":1001,"saasStoreId":7315,"storeId":"test57_hello"}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 结果不符合预期 expected [未找到该门店渠道表数据] but found [delFlg不为null,circleDTO={"channelId":999,"circleId":"test_circle_001","deliveryServiceType":9,"enabled":1,"fee":5000,"feeType":1,"name":"测试服务圈","saasCircleId":1001,"saasStoreId":7315,"storeId":"test57_hello"}]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest.testCircleSync_InvalidField(StoreCircleSyncTest.java:90)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
+at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCircleSync_InvalidField -->
+        <test-method status="FAIL" signature="testCircleSync_MissingRequired()[pri:0, instance:com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest@4ec4f3a0]" name="testCircleSync_MissingRequired" duration-ms="5091" started-at="2025-03-04T13:41:06 CST" description="异常场景测试：缺少必填字段" finished-at="2025-03-04T13:41:11 CST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[结果不符合预期 expected [1] but found [open_store_001]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 结果不符合预期 expected [1] but found [open_store_001]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest.testCircleSync_MissingRequired(StoreCircleSyncTest.java:67)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
+at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCircleSync_MissingRequired -->
+        <test-method status="PASS" signature="testCircleSync_Success()[pri:0, instance:com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest@4ec4f3a0]" name="testCircleSync_Success" duration-ms="5147" started-at="2025-03-04T13:41:11 CST" description="正常场景测试：传递合法参数" finished-at="2025-03-04T13:41:16 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCircleSync_Success -->
+      </class> <!-- com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest -->
+    </test> <!-- Store Circle Sync Tests -->
+    <test name="Store Base Sync Tests" duration-ms="15556" started-at="2025-03-04T13:41:21 CST" finished-at="2025-03-04T13:41:37 CST">
+      <class name="com.saas.qa.api.testcase.open.store.StoreBaseSyncTest">
+        <test-method status="FAIL" signature="testStoreBaseSync_InvalidField()[pri:0, instance:com.saas.qa.api.testcase.open.store.StoreBaseSyncTest@1a482e36]" name="testStoreBaseSync_InvalidField" duration-ms="5085" started-at="2025-03-04T13:41:21 CST" description="异常场景测试：无效字段值" finished-at="2025-03-04T13:41:26 CST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[结果不符合预期 expected [渠道ID不存在] but found [delFlg不为null,storeInfoRequest={"address":"北京市朝阳区测试地址","channelId":999,"longLat":{"latitude":999.999999,"longitude":999.999999},"merchantId":57,"posHub":9,"saasStoreId":7315,"selfServiceDistance":1,"storeId":"test57_hello","storeName":"测试门店","storePosType":9,"storeStatus":9,"storeType":9}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 结果不符合预期 expected [渠道ID不存在] but found [delFlg不为null,storeInfoRequest={"address":"北京市朝阳区测试地址","channelId":999,"longLat":{"latitude":999.999999,"longitude":999.999999},"merchantId":57,"posHub":9,"saasStoreId":7315,"selfServiceDistance":1,"storeId":"test57_hello","storeName":"测试门店","storePosType":9,"storeStatus":9,"storeType":9}]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.saas.qa.api.testcase.open.store.StoreBaseSyncTest.testStoreBaseSync_InvalidField(StoreBaseSyncTest.java:91)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
+at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStoreBaseSync_InvalidField -->
+        <test-method status="FAIL" signature="testStoreBaseSync_MissingRequired()[pri:0, instance:com.saas.qa.api.testcase.open.store.StoreBaseSyncTest@1a482e36]" name="testStoreBaseSync_MissingRequired" duration-ms="5096" started-at="2025-03-04T13:41:26 CST" description="异常场景测试：缺少必填字段" finished-at="2025-03-04T13:41:32 CST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[结果不符合预期 expected [门店名称不能为空] but found [delFlg不为null,storeInfoRequest={"address":"北京市朝阳区测试地址","channelId":2,"longLat":{"latitude":39.909946,"longitude":116.397428},"merchantId":57,"posHub":0,"saasStoreId":7315,"selfServiceDistance":1,"storeId":"test57_hello","storePosType":1,"storeStatus":1,"storeType":0}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 结果不符合预期 expected [门店名称不能为空] but found [delFlg不为null,storeInfoRequest={"address":"北京市朝阳区测试地址","channelId":2,"longLat":{"latitude":39.909946,"longitude":116.397428},"merchantId":57,"posHub":0,"saasStoreId":7315,"selfServiceDistance":1,"storeId":"test57_hello","storePosType":1,"storeStatus":1,"storeType":0}]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.saas.qa.api.testcase.open.store.StoreBaseSyncTest.testStoreBaseSync_MissingRequired(StoreBaseSyncTest.java:68)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
+at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStoreBaseSync_MissingRequired -->
+        <test-method status="PASS" signature="testStoreBaseSync_Success()[pri:0, instance:com.saas.qa.api.testcase.open.store.StoreBaseSyncTest@1a482e36]" name="testStoreBaseSync_Success" duration-ms="5368" started-at="2025-03-04T13:41:32 CST" description="正常场景测试：传递合法参数" finished-at="2025-03-04T13:41:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStoreBaseSync_Success -->
+      </class> <!-- com.saas.qa.api.testcase.open.store.StoreBaseSyncTest -->
+    </test> <!-- Store Base Sync Tests -->
+  </suite> <!-- Daily Test Suite -->
+</testng-results>

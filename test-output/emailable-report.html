@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Daily Test Suite</th></tr>
+<tr><td><a href="#t0">Store Status Update Tests</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21,296</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Store Circle Sync Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">15,342</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Store Base Sync Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">15,556</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">5</th><th class="num">0</th><th class="num">0</th><th class="num attn">4</th><th class="num">52,194</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Daily Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Store Status Update Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest</td><td><a href="#m0">testStoreStatusUpdate_InvalidField</a></td><td rowspan="1">1741066835240</td><td rowspan="1">10994</td></tr><tr class="passedeven"><td><a href="#m1">testStoreStatusUpdate_MissingRequired</a></td><td rowspan="1">1741066846265</td><td rowspan="1">5136</td></tr><tr class="passedeven"><td><a href="#m2">testStoreStatusUpdate_Success</a></td><td rowspan="1">1741066851404</td><td rowspan="1">5116</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Store Circle Sync Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest</td><td><a href="#m3">testCircleSync_InvalidField</a></td><td rowspan="1">1741066861549</td><td rowspan="1">5097</td></tr><tr class="failedeven"><td><a href="#m4">testCircleSync_MissingRequired</a></td><td rowspan="1">1741066866648</td><td rowspan="1">5091</td></tr><tr><th colspan="4">Store Circle Sync Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest</td><td><a href="#m5">testCircleSync_Success</a></td><td rowspan="1">1741066871742</td><td rowspan="1">5147</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Store Base Sync Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.saas.qa.api.testcase.open.store.StoreBaseSyncTest</td><td><a href="#m6">testStoreBaseSync_InvalidField</a></td><td rowspan="1">1741066881909</td><td rowspan="1">5085</td></tr><tr class="failedeven"><td><a href="#m7">testStoreBaseSync_MissingRequired</a></td><td rowspan="1">1741066886996</td><td rowspan="1">5096</td></tr><tr><th colspan="4">Store Base Sync Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.saas.qa.api.testcase.open.store.StoreBaseSyncTest</td><td><a href="#m8">testStoreBaseSync_Success</a></td><td rowspan="1">1741066892094</td><td rowspan="1">5368</td></tr></tbody>
+</table>
+<h2>Store Status Update Tests</h2><h3 id="m0">com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest#testStoreStatusUpdate_InvalidField</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest#testStoreStatusUpdate_MissingRequired</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest#testStoreStatusUpdate_Success</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Store Circle Sync Tests</h2><h3 id="m3">com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest#testCircleSync_InvalidField</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 结果不符合预期 expected [未找到该门店渠道表数据] but found [delFlg不为null,circleDTO={&quot;channelId&quot;:999,&quot;circleId&quot;:&quot;test_circle_001&quot;,&quot;deliveryServiceType&quot;:9,&quot;enabled&quot;:1,&quot;fee&quot;:5000,&quot;feeType&quot;:1,&quot;name&quot;:&quot;测试服务圈&quot;,&quot;saasCircleId&quot;:1001,&quot;saasStoreId&quot;:7315,&quot;storeId&quot;:&quot;test57_hello&quot;}]
+	at com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest.testCircleSync_InvalidField(StoreCircleSyncTest.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
+	at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+	at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest#testCircleSync_MissingRequired</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 结果不符合预期 expected [1] but found [open_store_001]
+	at com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest.testCircleSync_MissingRequired(StoreCircleSyncTest.java:67)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
+	at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+	at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest#testCircleSync_Success</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Store Base Sync Tests</h2><h3 id="m6">com.saas.qa.api.testcase.open.store.StoreBaseSyncTest#testStoreBaseSync_InvalidField</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 结果不符合预期 expected [渠道ID不存在] but found [delFlg不为null,storeInfoRequest={&quot;address&quot;:&quot;北京市朝阳区测试地址&quot;,&quot;channelId&quot;:999,&quot;longLat&quot;:{&quot;latitude&quot;:999.999999,&quot;longitude&quot;:999.999999},&quot;merchantId&quot;:57,&quot;posHub&quot;:9,&quot;saasStoreId&quot;:7315,&quot;selfServiceDistance&quot;:1,&quot;storeId&quot;:&quot;test57_hello&quot;,&quot;storeName&quot;:&quot;测试门店&quot;,&quot;storePosType&quot;:9,&quot;storeStatus&quot;:9,&quot;storeType&quot;:9}]
+	at com.saas.qa.api.testcase.open.store.StoreBaseSyncTest.testStoreBaseSync_InvalidField(StoreBaseSyncTest.java:91)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
+	at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+	at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.saas.qa.api.testcase.open.store.StoreBaseSyncTest#testStoreBaseSync_MissingRequired</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 结果不符合预期 expected [门店名称不能为空] but found [delFlg不为null,storeInfoRequest={&quot;address&quot;:&quot;北京市朝阳区测试地址&quot;,&quot;channelId&quot;:2,&quot;longLat&quot;:{&quot;latitude&quot;:39.909946,&quot;longitude&quot;:116.397428},&quot;merchantId&quot;:57,&quot;posHub&quot;:0,&quot;saasStoreId&quot;:7315,&quot;selfServiceDistance&quot;:1,&quot;storeId&quot;:&quot;test57_hello&quot;,&quot;storePosType&quot;:1,&quot;storeStatus&quot;:1,&quot;storeType&quot;:0}]
+	at com.saas.qa.api.testcase.open.store.StoreBaseSyncTest.testStoreBaseSync_MissingRequired(StoreBaseSyncTest.java:68)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
+	at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+	at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.saas.qa.api.testcase.open.store.StoreBaseSyncTest#testStoreBaseSync_Success</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

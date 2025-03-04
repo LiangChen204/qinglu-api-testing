@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Daily_Test_Suite">
+              <span class="suite-name border-failed">Daily Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Daily_Test_Suite">
+                    <span>testng-daily.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Daily_Test_Suite">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Daily_Test_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Daily_Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Daily_Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Daily_Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Daily_Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 4 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Daily_Test_Suite" class="hide-methods failed suite-Daily_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Daily_Test_Suite -->
+                      <a href="#" panel-name="suite-Daily_Test_Suite" class="show-methods failed suite-Daily_Test_Suite"> (show)</a> <!-- show-methods failed suite-Daily_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Daily_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Daily_Test_Suite" title="com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest" hash-for-method="testCircleSync_InvalidField">testCircleSync_InvalidField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Daily_Test_Suite" title="com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest" hash-for-method="testCircleSync_MissingRequired">testCircleSync_MissingRequired</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Daily_Test_Suite" title="com.saas.qa.api.testcase.open.store.StoreBaseSyncTest" hash-for-method="testStoreBaseSync_InvalidField">testStoreBaseSync_InvalidField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Daily_Test_Suite" title="com.saas.qa.api.testcase.open.store.StoreBaseSyncTest" hash-for-method="testStoreBaseSync_MissingRequired">testStoreBaseSync_MissingRequired</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Daily_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Daily_Test_Suite" class="hide-methods passed suite-Daily_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Daily_Test_Suite -->
+                      <a href="#" panel-name="suite-Daily_Test_Suite" class="show-methods passed suite-Daily_Test_Suite"> (show)</a> <!-- show-methods passed suite-Daily_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Daily_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Daily_Test_Suite" title="com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest" hash-for-method="testCircleSync_Success">testCircleSync_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Daily_Test_Suite" title="com.saas.qa.api.testcase.open.store.StoreBaseSyncTest" hash-for-method="testStoreBaseSync_Success">testStoreBaseSync_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Daily_Test_Suite" title="com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest" hash-for-method="testStoreStatusUpdate_InvalidField">testStoreStatusUpdate_InvalidField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Daily_Test_Suite" title="com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest" hash-for-method="testStoreStatusUpdate_MissingRequired">testStoreStatusUpdate_MissingRequired</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Daily_Test_Suite" title="com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest" hash-for-method="testStoreStatusUpdate_Success">testStoreStatusUpdate_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Daily_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Daily_Test_Suite" class="panel Daily_Test_Suite">
+          <div class="suite-Daily_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCircleSync_InvalidField">
+                  </a> <!-- testCircleSync_InvalidField -->
+                  <span class="method-name">testCircleSync_InvalidField</span>
+                  <div class="stack-trace">java.lang.AssertionError: 结果不符合预期 expected [未找到该门店渠道表数据] but found [delFlg不为null,circleDTO={&quot;channelId&quot;:999,&quot;circleId&quot;:&quot;test_circle_001&quot;,&quot;deliveryServiceType&quot;:9,&quot;enabled&quot;:1,&quot;fee&quot;:5000,&quot;feeType&quot;:1,&quot;name&quot;:&quot;测试服务圈&quot;,&quot;saasCircleId&quot;:1001,&quot;saasStoreId&quot;:7315,&quot;storeId&quot;:&quot;test57_hello&quot;}]
+	at com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest.testCircleSync_InvalidField(StoreCircleSyncTest.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
+	at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+	at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(异常场景测试：无效字段值)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCircleSync_MissingRequired">
+                  </a> <!-- testCircleSync_MissingRequired -->
+                  <span class="method-name">testCircleSync_MissingRequired</span>
+                  <div class="stack-trace">java.lang.AssertionError: 结果不符合预期 expected [1] but found [open_store_001]
+	at com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest.testCircleSync_MissingRequired(StoreCircleSyncTest.java:67)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
+	at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+	at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(异常场景测试：缺少必填字段)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Daily_Test_Suite-class-failed -->
+          <div class="suite-Daily_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.saas.qa.api.testcase.open.store.StoreBaseSyncTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testStoreBaseSync_InvalidField">
+                  </a> <!-- testStoreBaseSync_InvalidField -->
+                  <span class="method-name">testStoreBaseSync_InvalidField</span>
+                  <div class="stack-trace">java.lang.AssertionError: 结果不符合预期 expected [渠道ID不存在] but found [delFlg不为null,storeInfoRequest={&quot;address&quot;:&quot;北京市朝阳区测试地址&quot;,&quot;channelId&quot;:999,&quot;longLat&quot;:{&quot;latitude&quot;:999.999999,&quot;longitude&quot;:999.999999},&quot;merchantId&quot;:57,&quot;posHub&quot;:9,&quot;saasStoreId&quot;:7315,&quot;selfServiceDistance&quot;:1,&quot;storeId&quot;:&quot;test57_hello&quot;,&quot;storeName&quot;:&quot;测试门店&quot;,&quot;storePosType&quot;:9,&quot;storeStatus&quot;:9,&quot;storeType&quot;:9}]
+	at com.saas.qa.api.testcase.open.store.StoreBaseSyncTest.testStoreBaseSync_InvalidField(StoreBaseSyncTest.java:91)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
+	at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+	at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(异常场景测试：无效字段值)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testStoreBaseSync_MissingRequired">
+                  </a> <!-- testStoreBaseSync_MissingRequired -->
+                  <span class="method-name">testStoreBaseSync_MissingRequired</span>
+                  <div class="stack-trace">java.lang.AssertionError: 结果不符合预期 expected [门店名称不能为空] but found [delFlg不为null,storeInfoRequest={&quot;address&quot;:&quot;北京市朝阳区测试地址&quot;,&quot;channelId&quot;:2,&quot;longLat&quot;:{&quot;latitude&quot;:39.909946,&quot;longitude&quot;:116.397428},&quot;merchantId&quot;:57,&quot;posHub&quot;:0,&quot;saasStoreId&quot;:7315,&quot;selfServiceDistance&quot;:1,&quot;storeId&quot;:&quot;test57_hello&quot;,&quot;storePosType&quot;:1,&quot;storeStatus&quot;:1,&quot;storeType&quot;:0}]
+	at com.saas.qa.api.testcase.open.store.StoreBaseSyncTest.testStoreBaseSync_MissingRequired(StoreBaseSyncTest.java:68)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
+	at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+	at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(异常场景测试：缺少必填字段)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Daily_Test_Suite-class-failed -->
+          <div class="suite-Daily_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCircleSync_Success">
+                  </a> <!-- testCircleSync_Success -->
+                  <span class="method-name">testCircleSync_Success</span>
+                  <em>
+(正常场景测试：传递合法参数)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Daily_Test_Suite-class-passed -->
+          <div class="suite-Daily_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.saas.qa.api.testcase.open.store.StoreBaseSyncTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testStoreBaseSync_Success">
+                  </a> <!-- testStoreBaseSync_Success -->
+                  <span class="method-name">testStoreBaseSync_Success</span>
+                  <em>
+(正常场景测试：传递合法参数)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Daily_Test_Suite-class-passed -->
+          <div class="suite-Daily_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testStoreStatusUpdate_InvalidField">
+                  </a> <!-- testStoreStatusUpdate_InvalidField -->
+                  <span class="method-name">testStoreStatusUpdate_InvalidField</span>
+                  <em>
+(异常场景测试：无效字段值)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testStoreStatusUpdate_MissingRequired">
+                  </a> <!-- testStoreStatusUpdate_MissingRequired -->
+                  <span class="method-name">testStoreStatusUpdate_MissingRequired</span>
+                  <em>
+(异常场景测试：缺少必填字段)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testStoreStatusUpdate_Success">
+                  </a> <!-- testStoreStatusUpdate_Success -->
+                  <span class="method-name">testStoreStatusUpdate_Success</span>
+                  <em>
+(正常场景测试：传递合法参数)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Daily_Test_Suite-class-passed -->
+        </div> <!-- panel Daily_Test_Suite -->
+        <div panel-name="test-xml-Daily_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/sl_chen/IdeaProjects/qinglu-api-testing/src/test/resources/testng-daily.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Daily Test Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Store Status Update Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Store Status Update Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Store Circle Sync Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Store Circle Sync Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Store Base Sync Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.saas.qa.api.testcase.open.store.StoreBaseSyncTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Store Base Sync Tests --&gt;
+&lt;/suite&gt; &lt;!-- Daily Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Daily_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Daily Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Store Status Update Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Store Circle Sync Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Store Base Sync Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Daily_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Daily Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Daily_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Daily Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Daily_Test_Suite');
+function tableData_Daily_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testStoreStatusUpdate_InvalidField')
+data.setCell(0, 2, 'com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest')
+data.setCell(0, 3, 10994);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testStoreBaseSync_Success')
+data.setCell(1, 2, 'com.saas.qa.api.testcase.open.store.StoreBaseSyncTest')
+data.setCell(1, 3, 5368);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCircleSync_Success')
+data.setCell(2, 2, 'com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest')
+data.setCell(2, 3, 5147);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testStoreStatusUpdate_MissingRequired')
+data.setCell(3, 2, 'com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest')
+data.setCell(3, 3, 5136);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testStoreStatusUpdate_Success')
+data.setCell(4, 2, 'com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest')
+data.setCell(4, 3, 5116);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testCircleSync_InvalidField')
+data.setCell(5, 2, 'com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest')
+data.setCell(5, 3, 5097);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testStoreBaseSync_MissingRequired')
+data.setCell(6, 2, 'com.saas.qa.api.testcase.open.store.StoreBaseSyncTest')
+data.setCell(6, 3, 5096);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testCircleSync_MissingRequired')
+data.setCell(7, 2, 'com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest')
+data.setCell(7, 3, 5091);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testStoreBaseSync_InvalidField')
+data.setCell(8, 2, 'com.saas.qa.api.testcase.open.store.StoreBaseSyncTest')
+data.setCell(8, 3, 5085);
+window.suiteTableData['Daily_Test_Suite']= { tableData: data, tableDiv: 'times-div-Daily_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 52 seconds</span>
+              <div id="times-div-Daily_Test_Suite">
+              </div> <!-- times-div-Daily_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Daily_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Daily Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Daily_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Daily_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saas.qa.api.testcase.open.store.StoreStatusUpdateTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testStoreStatusUpdate_InvalidField</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testStoreStatusUpdate_MissingRequired</span>
+                <span class="method-start">11025 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testStoreStatusUpdate_Success</span>
+                <span class="method-start">16164 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCircleSync_InvalidField</span>
+                <span class="method-start">26309 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCircleSync_MissingRequired</span>
+                <span class="method-start">31408 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCircleSync_Success</span>
+                <span class="method-start">36502 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saas.qa.api.testcase.open.store.StoreBaseSyncTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testStoreBaseSync_InvalidField</span>
+                <span class="method-start">46669 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testStoreBaseSync_MissingRequired</span>
+                <span class="method-start">51756 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testStoreBaseSync_Success</span>
+                <span class="method-start">56854 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

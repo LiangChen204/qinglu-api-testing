@@ -4,6 +4,7 @@ public class MethodConstants {
     // open接口方法
     // 1、车型增删改接口
     public static final String VEHICLE_MODEL_SYNCHRONIZATION = "qinglu.open.vehicle.model.synchronization";
+    public static final String VEHICLE_MODEL_UPDATE = "qinglu.open.vehicle.model.update";
     public static final String STORE_STATUS_UPDATE = "qinglu.open.store.status.update";
     // 2、门店服务圈接口
     public static final String STORE_CIRCLE_SYNC = "qinglu.open.store.circle.sync";

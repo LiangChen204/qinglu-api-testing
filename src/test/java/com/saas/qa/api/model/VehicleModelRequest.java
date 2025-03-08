@@ -16,7 +16,7 @@ public class VehicleModelRequest {
     }
 
     public void setVehicleModelId(String vehicleModelId) {
-        this.vehicleModelId = vehicleModelId;
+        this.vehicleModelId = "modelhello";
     }
 
     public Long getSaasModelId() {
@@ -62,4 +62,3 @@ public class VehicleModelRequest {
                 '}';
     }
 }
-

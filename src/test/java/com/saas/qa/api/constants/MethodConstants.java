@@ -11,6 +11,8 @@ public class MethodConstants {
     // 3、服务圈信息接口
     public static final String CIRCLE_INFO = "qinglu.open.circle.info";
     public static final String STORE_INFO = "qinglu.open.store.info";
+    // 4、车辆同步接口
+    public static final String VEHICLE_SYNC = "qinglu.open.vehicle.sync";
 
     // open环境相关常量
     public static final String Hello_BASE_URL = "http://open2.qinglusaas-dev.com";

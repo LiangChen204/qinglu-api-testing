@@ -48,4 +48,19 @@
             <class name="com.saas.qa.api.testcase.open.store.StoreBaseSyncTest"/>
         </classes>
     </test>
+    
+    <!-- 运行 VehicleSyncTest -->
+    <test name="Vehicle Sync Tests" preserve-order="true">
+        <classes>
+            <class name="com.saas.qa.api.testcase.open.car.VehicleSyncTest"/>
+        </classes>
+    </test>
+    
+    <!-- 运行 VehicleModelSyncTest -->
+    <test name="Vehicle Model Sync Tests" preserve-order="true">
+        <classes>
+            <class name="com.saas.qa.api.testcase.open.car.VehicleModelSyncTest"/>
+        </classes>
+    </test>
+
 </suite>

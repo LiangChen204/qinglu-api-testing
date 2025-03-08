@@ -3,7 +3,7 @@
 <testsuite skipped="0" hostname="shushudelichendebijibendiannao.local" name="com.saas.qa.api.testcase.open.store.StoreBaseSyncTest" tests="3" failures="2" timestamp="2025-03-04T13:41:47 CST" time="15.549" errors="0">
   <testcase name="testStoreBaseSync_InvalidField" time="5.085" classname="com.saas.qa.api.testcase.open.store.StoreBaseSyncTest">
     <failure type="java.lang.AssertionError" message="结果不符合预期 expected [渠道ID不存在] but found [delFlg不为null,storeInfoRequest={&quot;address&quot;:&quot;北京市朝阳区测试地址&quot;,&quot;channelId&quot;:999,&quot;longLat&quot;:{&quot;latitude&quot;:999.999999,&quot;longitude&quot;:999.999999},&quot;merchantId&quot;:57,&quot;posHub&quot;:9,&quot;saasStoreId&quot;:7315,&quot;selfServiceDistance&quot;:1,&quot;storeId&quot;:&quot;test57_hello&quot;,&quot;storeName&quot;:&quot;测试门店&quot;,&quot;storePosType&quot;:9,&quot;storeStatus&quot;:9,&quot;storeType&quot;:9}]">
-      <![CDATA[java.lang.AssertionError: 结果不符合预期 expected [渠道ID不存在] but found [delFlg不为null,storeInfoRequest={"address":"北京市朝阳区测试地址","channelId":999,"longLat":{"latitude":999.999999,"longitude":999.999999},"merchantId":57,"posHub":9,"saasStoreId":7315,"selfServiceDistance":1,"storeId":"test57_hello","storeName":"测试门店","storePosType":9,"storeStatus":9,"storeType":9}]
+        <![CDATA[java.lang.AssertionError: 结果不符合预期 expected [渠道ID不存在] but found [delFlg不为null,storeInfoRequest={"address":"北京市朝阳区测试地址","channelId":999,"longLat":{"latitude":999.999999,"longitude":999.999999},"merchantId":57,"posHub":9,"saasStoreId":7315,"selfServiceDistance":1,"storeId":"test57_hello","storeName":"测试门店","storePosType":9,"storeStatus":9,"storeType":9}]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -35,9 +35,9 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
 at org.testng.TestNG.runSuites(TestNG.java:1063)
 at org.testng.TestNG.run(TestNG.java:1031)
-at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
-at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
-at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+at com.saas.qa.api.utils.TestReportGenerator.runTests(TestReportGenerator.java:73)
+at com.saas.qa.api.utils.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+at com.saas.qa.api.utils.TestReportGenerator.main(TestReportGenerator.java:154)
 ]]>
     </failure>
   </testcase> <!-- testStoreBaseSync_InvalidField -->
@@ -46,7 +46,7 @@ at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
   <system-out/>
   <testcase name="testStoreBaseSync_MissingRequired" time="5.096" classname="com.saas.qa.api.testcase.open.store.StoreBaseSyncTest">
     <failure type="java.lang.AssertionError" message="结果不符合预期 expected [门店名称不能为空] but found [delFlg不为null,storeInfoRequest={&quot;address&quot;:&quot;北京市朝阳区测试地址&quot;,&quot;channelId&quot;:2,&quot;longLat&quot;:{&quot;latitude&quot;:39.909946,&quot;longitude&quot;:116.397428},&quot;merchantId&quot;:57,&quot;posHub&quot;:0,&quot;saasStoreId&quot;:7315,&quot;selfServiceDistance&quot;:1,&quot;storeId&quot;:&quot;test57_hello&quot;,&quot;storePosType&quot;:1,&quot;storeStatus&quot;:1,&quot;storeType&quot;:0}]">
-      <![CDATA[java.lang.AssertionError: 结果不符合预期 expected [门店名称不能为空] but found [delFlg不为null,storeInfoRequest={"address":"北京市朝阳区测试地址","channelId":2,"longLat":{"latitude":39.909946,"longitude":116.397428},"merchantId":57,"posHub":0,"saasStoreId":7315,"selfServiceDistance":1,"storeId":"test57_hello","storePosType":1,"storeStatus":1,"storeType":0}]
+        <![CDATA[java.lang.AssertionError: 结果不符合预期 expected [门店名称不能为空] but found [delFlg不为null,storeInfoRequest={"address":"北京市朝阳区测试地址","channelId":2,"longLat":{"latitude":39.909946,"longitude":116.397428},"merchantId":57,"posHub":0,"saasStoreId":7315,"selfServiceDistance":1,"storeId":"test57_hello","storePosType":1,"storeStatus":1,"storeType":0}]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -78,9 +78,9 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
 at org.testng.TestNG.runSuites(TestNG.java:1063)
 at org.testng.TestNG.run(TestNG.java:1031)
-at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
-at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
-at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+at com.saas.qa.api.utils.TestReportGenerator.runTests(TestReportGenerator.java:73)
+at com.saas.qa.api.utils.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+at com.saas.qa.api.utils.TestReportGenerator.main(TestReportGenerator.java:154)
 ]]>
     </failure>
   </testcase> <!-- testStoreBaseSync_MissingRequired -->

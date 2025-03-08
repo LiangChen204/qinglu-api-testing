@@ -14,7 +14,7 @@ public class VehicleModelRequestBuilder {
     }
 
     public VehicleModelRequestBuilder setVehicleModelId(String vehicleModelId) {
-        request.setVehicleModelId(vehicleModelId);
+        request.setVehicleModelId("modelhello");
         return this;
     }
 

@@ -1,29 +1,80 @@
 package com.saas.qa.api.model;
 
-// 通过swagger文档的入参说明 生成一个接口对应的json类
+import lombok.Data;
+
+/**
+ * 门店搜索请求
+ */
+@Data
 public class StoreSearchRequest {
-    private int channelId;
-    private int pickUpCityId;
+    private String keyword;
+    private Point location;
+    private Integer radius;
+    private Integer page;
+    private Integer size;
+    
+    // 添加缺少的字段
+    private Integer channelId;
+    private Integer pickUpCityId;
     private String pickUpDate;
     private Point pickUpPoint;
-    private int returnCityId;
+    private Integer returnCityId;
     private String returnDate;
     private Point returnPoint;
     
-    // Getters and Setters
-    public int getChannelId() {
+    public String getKeyword() {
+        return keyword;
+    }
+    
+    public void setKeyword(String keyword) {
+        this.keyword = keyword;
+    }
+    
+    public Point getLocation() {
+        return location;
+    }
+    
+    public void setLocation(Point location) {
+        this.location = location;
+    }
+    
+    public Integer getRadius() {
+        return radius;
+    }
+    
+    public void setRadius(Integer radius) {
+        this.radius = radius;
+    }
+    
+    public Integer getPage() {
+        return page;
+    }
+    
+    public void setPage(Integer page) {
+        this.page = page;
+    }
+    
+    public Integer getSize() {
+        return size;
+    }
+    
+    public void setSize(Integer size) {
+        this.size = size;
+    }
+    
+    public Integer getChannelId() {
         return channelId;
     }
     
-    public void setChannelId(int channelId) {
+    public void setChannelId(Integer channelId) {
         this.channelId = channelId;
     }
     
-    public int getPickUpCityId() {
+    public Integer getPickUpCityId() {
         return pickUpCityId;
     }
     
-    public void setPickUpCityId(int pickUpCityId) {
+    public void setPickUpCityId(Integer pickUpCityId) {
         this.pickUpCityId = pickUpCityId;
     }
     
@@ -43,11 +94,11 @@ public class StoreSearchRequest {
         this.pickUpPoint = pickUpPoint;
     }
     
-    public int getReturnCityId() {
+    public Integer getReturnCityId() {
         return returnCityId;
     }
     
-    public void setReturnCityId(int returnCityId) {
+    public void setReturnCityId(Integer returnCityId) {
         this.returnCityId = returnCityId;
     }
     

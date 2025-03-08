@@ -3,7 +3,7 @@
 <testsuite skipped="0" hostname="shushudelichendebijibendiannao.local" name="com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest" tests="3" failures="2" timestamp="2025-03-04T13:41:42 CST" time="15.335" errors="0">
   <testcase name="testCircleSync_InvalidField" time="5.097" classname="com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest">
     <failure type="java.lang.AssertionError" message="结果不符合预期 expected [未找到该门店渠道表数据] but found [delFlg不为null,circleDTO={&quot;channelId&quot;:999,&quot;circleId&quot;:&quot;test_circle_001&quot;,&quot;deliveryServiceType&quot;:9,&quot;enabled&quot;:1,&quot;fee&quot;:5000,&quot;feeType&quot;:1,&quot;name&quot;:&quot;测试服务圈&quot;,&quot;saasCircleId&quot;:1001,&quot;saasStoreId&quot;:7315,&quot;storeId&quot;:&quot;test57_hello&quot;}]">
-      <![CDATA[java.lang.AssertionError: 结果不符合预期 expected [未找到该门店渠道表数据] but found [delFlg不为null,circleDTO={"channelId":999,"circleId":"test_circle_001","deliveryServiceType":9,"enabled":1,"fee":5000,"feeType":1,"name":"测试服务圈","saasCircleId":1001,"saasStoreId":7315,"storeId":"test57_hello"}]
+        <![CDATA[java.lang.AssertionError: 结果不符合预期 expected [未找到该门店渠道表数据] but found [delFlg不为null,circleDTO={"channelId":999,"circleId":"test_circle_001","deliveryServiceType":9,"enabled":1,"fee":5000,"feeType":1,"name":"测试服务圈","saasCircleId":1001,"saasStoreId":7315,"storeId":"test57_hello"}]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -35,16 +35,16 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
 at org.testng.TestNG.runSuites(TestNG.java:1063)
 at org.testng.TestNG.run(TestNG.java:1031)
-at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
-at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
-at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+at com.saas.qa.api.utils.TestReportGenerator.runTests(TestReportGenerator.java:73)
+at com.saas.qa.api.utils.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+at com.saas.qa.api.utils.TestReportGenerator.main(TestReportGenerator.java:154)
 ]]>
     </failure>
   </testcase> <!-- testCircleSync_InvalidField -->
   <system-out/>
   <testcase name="testCircleSync_MissingRequired" time="5.091" classname="com.saas.qa.api.testcase.open.circle.StoreCircleSyncTest">
     <failure type="java.lang.AssertionError" message="结果不符合预期 expected [1] but found [open_store_001]">
-      <![CDATA[java.lang.AssertionError: 结果不符合预期 expected [1] but found [open_store_001]
+        <![CDATA[java.lang.AssertionError: 结果不符合预期 expected [1] but found [open_store_001]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -76,9 +76,9 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
 at org.testng.TestNG.runSuites(TestNG.java:1063)
 at org.testng.TestNG.run(TestNG.java:1031)
-at com.saas.qa.api.util.TestReportGenerator.runTests(TestReportGenerator.java:73)
-at com.saas.qa.api.util.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
-at com.saas.qa.api.util.TestReportGenerator.main(TestReportGenerator.java:154)
+at com.saas.qa.api.utils.TestReportGenerator.runTests(TestReportGenerator.java:73)
+at com.saas.qa.api.utils.TestReportGenerator.generateAndOpenReport(TestReportGenerator.java:53)
+at com.saas.qa.api.utils.TestReportGenerator.main(TestReportGenerator.java:154)
 ]]>
     </failure>
   </testcase> <!-- testCircleSync_MissingRequired -->
